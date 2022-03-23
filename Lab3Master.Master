@@ -1,0 +1,71 @@
+﻿<%--Ursula Mitchell
+FEB 16 2022--%>
+<%--Master Page for website to create a uniform look--%>
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Lab3Master.master.cs" Inherits="Lab3.Lab3Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">   
+
+        <asp:XmlDataSource ID="xmlsrcNavigation" XPath="Items/MenuItem" DataFile="~/Navigation.xml" runat="server"></asp:XmlDataSource>
+        <div>
+            <h1>
+                 Welcome To DukeGroup!
+                
+            </h1>
+           
+            <table>
+            
+             
+           
+           <tr>
+            <td></td>
+            <td colspan="2">
+                <asp:Menu ID="Menu1" ForeColor="Black" DataSourceID="xmlsrcNavigation" StaticDisplayLevels="1" DisappearAfter="2000" runat="server">
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle BackColor="MediumPurple" />
+                    <asp:MenuItemStyle BackColor="LightGoldenrodYellow" />
+                </LevelMenuItemStyles>
+                <LevelSelectedStyles>
+                    <asp:MenuItemStyle BackColor="White" />
+                    <asp:MenuItemStyle BackColor="White" />
+                </LevelSelectedStyles>
+                <DataBindings>
+                    <asp:MenuItemBinding DataMember="MenuItem" TextField="Text" NavigateUrlField="NavigateUrl" />
+                </DataBindings>
+                </asp:Menu>
+        <%--            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />--%>
+           
+            </td>
+           
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="Image1" ImageUrl="~/Images/jmu_pano.jpg" runat="server" Height="261px" Width="1230px"/>
+                    
+                </td>
+            </tr>
+                
+           
+            
+            </table>
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+               
+              
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+    
+</html>

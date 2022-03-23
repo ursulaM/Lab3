@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+	<MenuItem NavigateUrl ="~/HomeNav.aspx" Text="Home"/>
+	<MenuItem NavigateUrl ="~/ViewStudent.aspx" Text="Student">
+		<MenuItem NavigateUrl="~/ApplyScholarship.aspx" Text="Apply for a Scholarship!"/>
+		<MenuItem NavigateUrl="~/ApplyJob.aspx" Text="Apply for a Job!"/>
+		<MenuItem NavigateUrl="~/ApplyInternship.aspx" Text="Apply for an Internship!"/>
+		<MenuItem NavigateUrl="~/EditStudentProfile.aspx" Text="Edit Student profile"/>
+		<MenuItem NavigateUrl="~/Report.aspx" Text="Student Awarded Internships"/>
+		<MenuItem NavigateUrl="~/UploadPDF.aspx" Text="Upload Your Resume!"/>
+	</MenuItem>
+	<MenuItem NavigateUrl ="~/Member.aspx" Text ="Member">
+		<MenuItem NavigateUrl="~/EditMemberProfile.aspx" Text="Edit Member Profile"/>
+		<MenuItem NavigateUrl="~/EditMember.aspx" Text="Edit Member"/>
+		<MenuItem NavigateUrl="~/EditScholarship.aspx" Text="Edit Scholarship"/>
+		<MenuItem NavigateUrl="~/EditInternship.aspx" Text="Edit Internship"/>
+		<MenuItem NavigateUrl="~/EditJob.aspx" Text="Edit Job"/>
+		<MenuItem NavigateUrl="~/EditStudent.aspx" Text="Edit Student Information"/>
+		<MenuItem NavigateUrl="~/AddScholarship.aspx" Text="Add Scholarship"/>
+		<MenuItem NavigateUrl="~/AddInternship.aspx" Text="Add Internship"/>
+		<MenuItem NavigateUrl="~/AddScholarship.aspx" Text="Add Scholarship"/>
+		<MenuItem NavigateUrl="~/AddMember.aspx" Text="Add Member"/>
+		<MenuItem NavigateUrl="~/AddJob.aspx" Text="Add Job"/>
+		<MenuItem NavigateUrl="~/AwardScholaarshipaspx.aspx" Text="Award Scholarship"/>
+		<MenuItem NavigateUrl="~/AwardJob.aspx" Text="Award Job"/>
+		<MenuItem NavigateUrl="~/AwardInternship.aspx" Text="Award Internship"/>
+		<MenuItem NavigateUrl="~/AssignMentor.aspx" Text="Assign Mentor"/>
+		<MenuItem NavigateUrl="~/Report.aspx" Text="Mentorship Names"/>
+		<MenuItem NavigateUrl="~/Report.aspx" Text="Student Awarded Internships"/>
+		<MenuItem NavigateUrl="~/StudentSearch.aspx" Text="Search a Student"/>
+		
+
+	</MenuItem>  
+</Items>
